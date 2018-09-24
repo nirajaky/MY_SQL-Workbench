@@ -1,0 +1,36 @@
+DROP TABLE student;
+
+CREATE TABLE student(
+
+    
+	student_id INT ,
+
+    
+	name VARCHAR(20) NOT NULL,
+
+  
+	major VARCHAR(20)UNIQUE,
+
+    
+	PRIMARY KEY(student_id)
+);
+
+
+DESCRIBE student;
+SELECT * FROM student;
+
+
+INSERT INTO student VALUES(1, 'Sonu', 'English');
+
+
+INSERT INTO student VALUES(2, 'Niraj', 'Maths');
+
+
+INSERT INTO student VALUES(3, 'Dhiraj', 'Biology');
+
+
+INSERT INTO student(student_id, name) VALUES(4, 'Raman');
+
+
+INSERT INTO student(student_id, name) VALUES(5, 'sHAYAM');
+
