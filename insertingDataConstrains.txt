@@ -1,0 +1,41 @@
+DROP TABLE student;
+
+CREATE TABLE student(
+
+    
+	student_id INT AUTO_INCREMENT,
+
+    
+	name VARCHAR(20) NOT NULL,
+
+  
+	major VARCHAR(20)DEFAULT 'UNDECIDED',
+
+    
+	PRIMARY KEY(student_id)
+
+);
+
+
+DESCRIBE student;
+
+
+SELECT * FROM student;
+
+
+INSERT INTO student(name, major) VALUES('Sonu', 'English');
+
+
+INSERT INTO student(name, major) VALUES('Niraj', 'Maths');
+
+
+INSERT INTO student(name, major) VALUES('Dhiraj', 'Biology');
+
+
+INSERT INTO student(name) VALUES('Raman');
+
+
+INSERT INTO student(name) VALUES('sHAYAM');
+
+
+DROP TABLE student;
