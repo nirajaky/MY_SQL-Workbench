@@ -9,7 +9,7 @@ CREATE TABLE student(
 	name VARCHAR(20) NOT NULL,
 
   
-	major VARCHAR(20)DEFAULT 'UNDECIDED',
+	major VARCHAR(20) DEFAULT 'UNDECIDED',
 
     
 	PRIMARY KEY(student_id)
@@ -38,4 +38,3 @@ INSERT INTO student(name) VALUES('Raman');
 INSERT INTO student(name) VALUES('sHAYAM');
 
 
-DROP TABLE student;
