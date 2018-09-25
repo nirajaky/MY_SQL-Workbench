@@ -1,0 +1,49 @@
+DROP TABLE student;
+
+CREATE TABLE student(
+ 
+   
+	student_id INT AUTO_INCREMENT,
+ 
+   
+	name VARCHAR(20) NOT NULL,
+ 
+ 
+	major VARCHAR(20)DEFAULT 'UNDECIDED',
+ 
+   
+	PRIMARY KEY(student_id)
+);
+
+
+DESCRIBE student;
+
+
+SELECT * FROM student;
+
+
+
+UPDATE student
+SET major = 'Maths'
+
+WHERE student_id > 3 ;
+
+
+
+UPDATE student
+SET major = 'Mathematics'
+
+WHERE major <> 'Maths';
+
+
+
+UPDATE student
+SET major = 'Biology'
+
+WHERE student_id <=2;
+
+
+
+DELETE FROM student
+
+WHERE major = 'Biology';
