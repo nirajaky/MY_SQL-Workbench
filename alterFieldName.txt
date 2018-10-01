@@ -1,0 +1,26 @@
+SELECT *
+
+FROM branch_supplier
+
+WHERE branch_name LIKE '%mm%';
+
+
+
+SELECT *
+FROM branch_supplier;
+
+
+
+DESCRIBE branch_supplier;
+
+
+
+ALTER TABLE branch_supplier
+
+CHANGE branch_name supplier_name VARCHAR(40);
+
+
+
+ALTER TABLE branch_supplier
+
+CHANGE branch_supplier supply_type VARCHAR(40);
