@@ -1,0 +1,69 @@
+-- Find all employees ordered by Salary
+
+
+
+SELECT *
+
+FROM employee
+
+ORDER BY salary DESC;
+
+
+
+-- Find all employees ordered by sex then name
+
+
+
+SELECT *
+
+FROM employee
+
+ORDER BY sex, first_name,last_name;
+
+
+
+-- Find first 5 employees in the table
+
+
+
+SELECT * 
+
+FROM employee
+
+LIMIT 5;
+
+
+
+-- FIND FIRST & LAST NAME OF ALL EMPLOYEE
+
+S
+
+SELECT first_name,last_name
+
+FROM employee;
+
+
+
+-- FIND FIRST AS FORENAME & LAST NAME AS SURNAME OF ALL EMPLOYEES
+
+
+
+SELECT first_name AS forename,last_name AS surname
+
+FROM employee;
+
+
+
+-- Find out all different genders
+
+
+
+SELECT DISTINCT sex
+
+FROM employee;
+
+
+
+SELECT DISTINCT branch_id
+
+FROM employee;

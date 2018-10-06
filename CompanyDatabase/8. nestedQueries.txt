@@ -1,0 +1,45 @@
+-- Find names of All the employee who has sold over 30,000 to a single client
+
+
+SELECT works_with.emp_id
+
+FROM works_with
+
+WHERE works_with.total_sales > 30000;
+
+
+SELECT employee.first_name, employee.last_name
+
+FROM employee
+
+WHERE emp_id IN (
+
+    SELECT works_with.emp_id
+
+    FROM works_with
+
+    WHERE works_with.total_sales > 30000
+
+);
+
+
+
+-- Find all the client who are handled by the branch which Michal Scott manages
+
+-- Assuming we knew Michal Scott ID as 102
+
+
+
+SELECT client.client_name
+
+FROM client
+
+WHERE client.branch_id = (
+
+    SELECT branch.branch_id
+
+    FROM branch
+
+    WHERE mgr_id = 102
+
+);

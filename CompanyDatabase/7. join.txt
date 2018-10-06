@@ -1,0 +1,53 @@
+INSERT INTO branch VALUES(4, 'BUFFALO', NULL ,NULL);
+
+
+
+SELECT *
+
+FROM branch;
+
+
+
+-- Find all branches and names of there Managers
+
+-- jOINS ALL THE ROWS POSSILE
+
+SELECT employee.emp_id, employee.first_name, branch.branch_name
+
+FROM employee
+
+JOIN branch;
+
+
+
+-- Find all branches and names of there Managers
+
+
+
+SELECT employee.emp_id, employee.first_name, branch.branch_name
+
+FROM employee
+
+JOIN branch
+
+ON employee.emp_id = branch.mgr_id;
+
+
+
+SELECT employee.emp_id, employee.first_name, branch.branch_name
+
+FROM employee
+
+LEFT JOIN branch
+
+ON employee.emp_id = branch.mgr_id;
+
+
+
+SELECT employee.emp_id, employee.first_name, branch.branch_name
+
+FROM employee
+
+RIGHT JOIN branch
+
+ON employee.emp_id = branch.mgr_id;

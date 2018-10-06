@@ -1,0 +1,56 @@
+-- '%' stands for any number if character and '_' stands for one character
+
+ 
+
+
+-- Find any client from LLC
+
+
+
+SELECT *
+
+FROM client
+
+WHERE client_name LIKE "%llc%";
+
+
+
+-- Find any branch supplier who are in label business
+
+
+DESCRIBE branch_supplier;
+
+SELECT *
+
+FROM branch_supplier
+
+WHERE supplier_name LIKE "%label%";
+
+
+
+-- Find any employee born in November
+
+
+SELECT *
+
+FROM employee;
+
+SELECT *
+FROM employee
+
+WHERE birth_date LIKE '____-11%';
+
+
+
+-- Find any client who are schools
+
+
+SELECT *
+
+FROM client;
+
+SELECT *
+
+FROM client
+
+WHERE client_name LIKE "%school%";
